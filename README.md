@@ -183,8 +183,17 @@ POST /api/register
 - ✅ Accessible (WCAG 2.1 Level AA)
 - ✅ Mobile-first responsive design
 - ✅ Express proxy for CORS handling
+- ✅ Rate limiting on registration endpoint
 - ✅ Comprehensive test coverage
 - ✅ Docker containerization
+
+## Security Features
+
+- **Rate Limiting**: 5 registration attempts per IP per hour
+- **CORS Protection**: Configured to allow cross-origin requests
+- **Input Validation**: Client-side and server-side validation
+- **Error Handling**: Sensitive errors logged server-side only
+- **Non-root User**: Docker container runs as non-root user
 
 ## License
 
